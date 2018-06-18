@@ -18,7 +18,9 @@ build:
 requirements:
   build:
     - cmake
-    - toolchain
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - elfutils  # so that the tests compiled in the build step can link to libdw
 
 test:
