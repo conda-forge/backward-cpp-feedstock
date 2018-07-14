@@ -14,14 +14,16 @@ Summary: Backward is a beautiful stack trace pretty printer for C++.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/backward-cpp-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backward-cpp-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/backward-cpp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/backward-cpp-feedstock)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backward-cpp/badges/version.svg)](https://anaconda.org/conda-forge/backward-cpp)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backward-cpp/badges/downloads.svg)](https://anaconda.org/conda-forge/backward-cpp)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-backward--cpp-green.svg)](https://anaconda.org/conda-forge/backward-cpp) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/backward-cpp.svg)](https://anaconda.org/conda-forge/backward-cpp) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/backward-cpp.svg)](https://anaconda.org/conda-forge/backward-cpp) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/backward-cpp.svg)](https://anaconda.org/conda-forge/backward-cpp) |
 
 Installing backward-cpp
 =======================
