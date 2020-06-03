@@ -29,6 +29,9 @@ test:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - elfutils
+  commands:
+    - test -f $PREFIX/include/backward.hpp
+    - test -f $PREFIX/lib/libbackward.so
 
 about:
   home: https://github.com/bombela/backward-cpp
