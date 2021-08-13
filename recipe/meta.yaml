@@ -1,6 +1,6 @@
 {% set name = "backward-cpp" %}
-{% set version = "1.4" %}
-{% set sha256 = "ad73be31c5cfcbffbde7d34dba18158a42043a109e7f41946f0b0abd589ed55e" %}
+{% set version = "1.6" %}
+{% set sha256 = "c654d0923d43f1cea23d086729673498e4741fb2457e806cfaeaea7b20c97c10" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
-  skip: True  # [not linux]
+  number: 0
+  skip: true  # [not linux]
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Backward is a beautiful stack trace pretty printer for C++.'
+  summary: Backward is a beautiful stack trace pretty printer for C++.
   doc_url: https://github.com/bombela/backward-cpp/blob/master/README.md
   dev_url: https://github.com/bombela/backward-cpp
 
