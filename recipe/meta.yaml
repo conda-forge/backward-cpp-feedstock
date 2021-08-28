@@ -12,8 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: true  # [not linux]
+  number: 1
 
 requirements:
   build:
@@ -21,14 +20,15 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - elfutils  # so that the tests compiled in the build step can link to libdw
+    # so that the tests compiled in the build step can link to libdw
+    - elfutils  # [linux]
 
 test:
   requires:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - elfutils
+    - elfutils  # [linux]
 
 about:
   home: https://github.com/bombela/backward-cpp
