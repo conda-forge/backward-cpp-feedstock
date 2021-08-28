@@ -28,7 +28,7 @@ test:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - elfutils # [linux]
+    - elfutils  # [linux]
 
 about:
   home: https://github.com/bombela/backward-cpp
