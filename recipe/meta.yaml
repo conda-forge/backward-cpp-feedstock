@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -24,6 +24,12 @@ requirements:
     - elfutils  # [linux]
 
 test:
+  commands:
+    - test -f ${PREFIX}/include/backward.hpp  # [not win]
+    - test -f ${PREFIX}/lib/backward/BackwardConfig.cmake  # [not win]
+    - if not exist %PREFIX%\\Library\\include\\backward.hpp exit 1  # [win]
+    - if not exist %PREFIX%\\Library\\lib\\backward\\BackwardConfig.cmake exit 1  # [win]
+
   requires:
     - cmake
     - {{ compiler('c') }}
