@@ -2,7 +2,7 @@
 
 # Check files
 test -f ${PREFIX}/include/backward.hpp
-test -f ${PREFIX}/lib64/backward/BackwardConfig.cmake
+test -f ${PREFIX}/lib/backward/BackwardConfig.cmake
 
 # Test example build
 mkdir build
