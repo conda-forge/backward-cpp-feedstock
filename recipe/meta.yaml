@@ -26,7 +26,7 @@ requirements:
 test:
   commands:
     - test -f ${PREFIX}/include/backward.hpp  # [not win]
-    - test -f ${PREFIX}/lib/backward/BackwardConfig.cmake  # [not win]
+    - test -f ${PREFIX}/lib64/backward/BackwardConfig.cmake  # [not win]
     - if not exist %PREFIX%\\Library\\include\\backward.hpp exit 1  # [win]
     - if not exist %PREFIX%\\Library\\lib\\backward\\BackwardConfig.cmake exit 1  # [win]
 
