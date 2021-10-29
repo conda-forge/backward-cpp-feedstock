@@ -18,7 +18,7 @@ index aa8022c..e694c6f 100644
  
  // aarch64 and mips does not trap Division by zero
 -#if !defined(__aarch64__) || !defined(__mips__)
-+#if !defined(__aarch64__) && !defined(__mips__)
++#if !defined(__aarch64__) && !defined(__mips__) && !defined(__powerpc64__)
  volatile int zero = 0;
  
  int divide_by_zero() {
