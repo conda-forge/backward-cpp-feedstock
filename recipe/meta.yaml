@@ -10,6 +10,8 @@ source:
   fn: v{{ version }}.tar.gz
   url: https://github.com/bombela/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - fix_tests.patch
 
 build:
   number: 2
@@ -17,6 +19,7 @@ build:
 requirements:
   build:
     - cmake
+    - make  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -26,6 +29,7 @@ requirements:
 test:
   requires:
     - cmake
+    - make  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - elfutils  # [linux]
