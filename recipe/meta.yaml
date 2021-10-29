@@ -10,6 +10,8 @@ source:
   fn: v{{ version }}.tar.gz
   url: https://github.com/bombela/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - fix_tests.patch
 
 build:
   number: 1
