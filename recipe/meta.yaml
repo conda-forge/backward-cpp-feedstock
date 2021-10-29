@@ -29,6 +29,7 @@ requirements:
 test:
   requires:
     - cmake
+    - make  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - elfutils  # [linux]
