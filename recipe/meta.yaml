@@ -14,13 +14,14 @@ source:
     - fix_tests.patch
 
 build:
-  number: 4
+  number: 5
 
 requirements:
   build:
     - cmake
     - make  # [not win]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     # so that the tests compiled in the build step can link to libdw
