@@ -14,7 +14,7 @@ source:
     - fix_tests.patch
 
 build:
-  number: 7
+  number: 8
 
 requirements:
   build:
