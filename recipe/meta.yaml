@@ -4,7 +4,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   fn: v{{ version }}.tar.gz
@@ -14,7 +14,7 @@ source:
     - fix_tests.patch
 
 build:
-  number: 7
+  number: 8
 
 requirements:
   build:
